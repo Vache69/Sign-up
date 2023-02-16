@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins';
+    margin: 1.5rem;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.first-div {
+    padding: 10rem 7rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+h1 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.first-div p {
+    color: #fff;
+    font-size: 16px;
+}
+
+.second-div {
+    padding-top: 3rem;
+}
+
+.trial-btn {
+    width: 600px;
+    height: 80px;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 5px 20px 20px hsl(249, 10%, 26%);
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button span {
+    color: hsl(246, 25%, 77%);
+}
+
+
+.input-div {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding-top: 20px;
+}
+
+input {
+    margin: 1rem 1rem 1.5rem 1rem;
+    padding: 1rem 5rem 1rem 1rem;
+}
+
+.error-1 {
+    position: absolute;
+    padding: 30px 0 0 540px;
+    display: none;
+}
+
+.error-2 {
+    position: absolute;
+    padding: 120px 0 0 540px;
+    display: none;
+}
+
+.error-3 {
+    position: absolute;
+    padding: 210px 0 0 540px;
+    display: none;
+}
+
+.error-4 {
+    position: absolute;
+    padding: 305px 0 0 540px;
+    display: none;
+}
+
+
+.input-div p {
+    position: absolute;
+    text-align: right;
+    font-size: 12px;
+    color: hsl(0, 100%, 74%);
+    padding-right: 20px;
+}
+
+.p-1{
+    padding: 70px 0 0 400px;
+    display: none;
+}
+
+.p-2{
+    padding: 160px 0 0 400px;
+    display: none;
+}
+
+.p-3{
+    padding: 250px 0 0 400px;
+    display: none;
+}
+
+.p-4{
+    padding: 340px 0 0 400px;
+    display: none;
+}
+
+input::placeholder {
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+}
+
+.claim-btn {
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    justify-content: center;
+    align-content: center;
+    margin: 0 1rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 3px 5px 5px hsl(249, 10%, 26%);
+}
+
+#text {
+    color: hsl(246, 25%, 77%);
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#text span {
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 700px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    #main-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-div{
+        text-align: center;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .second-div{
+        padding-left: 20px;
+    }
+
+    .trial-btn{
+        width: 400px;
+        margin-left: -2rem;
+        font-size: 16px;
+    }
+
+    .input-div{
+        width: 400px;
+        justify-content: center;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .error-1 {
+        position: absolute;
+        padding: 0 0 440px 350px;
+        display: none;
+    }
+    
+    .error-2 {
+        position: absolute;
+        padding: 0px 0 260px 350px;
+        display: none;
+    }
+    
+    .error-3 {
+        position: absolute;
+        padding: 0px 0 80px 350px;
+        display: none;
+    }
+    
+    .error-4 {
+        position: absolute;
+        padding: 105px 0 0 350px;
+        display: none;
+    }
+
+    .p-1{
+        padding: 0 0 370px 210px;
+        display: none;
+    }
+    
+    .p-2{
+        padding: 0px 0 180px 210px;
+        display: none;
+    }
+    
+    .p-3{
+        padding: 0 0 5px 210px;
+        display: none;
+    }
+    
+    .p-4{
+        padding: 180px 0 0 210px;
+        display: none;
+    }
+}
